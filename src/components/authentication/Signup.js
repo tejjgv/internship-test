@@ -53,7 +53,7 @@ const Signup = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:5000/user",
+        "https://crud-backend-r9ez.onrender.com/user",
         { name, email, isTeacher, password },
         config
       );
