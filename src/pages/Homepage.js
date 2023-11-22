@@ -75,21 +75,7 @@ const Homepage = () => {
           direction={"row"}
           spacing={6}
         >
-          <Link href={"https://github.com/Subrata-Rudra"} target="_blank">
-            GitHub
-          </Link>
-          <Link
-            href={"https://www.linkedin.com/in/subrata-rudra-b481741b7/"}
-            target="_blank"
-          >
-            LinkedIn
-          </Link>
-          <Link
-            href={"https://www.facebook.com/subrata.rudra.982/"}
-            target="_blank"
-          >
-            FaceBook
-          </Link>
+      
         </Stack>
         <Text
           color="white"
@@ -97,7 +83,7 @@ const Homepage = () => {
           fontWeight="bold"
           fontSize="16px"
         >
-          Made with ❤️ by Subrata Rudra
+          
         </Text>
       </Container>
     </Container>

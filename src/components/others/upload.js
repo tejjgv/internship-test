@@ -72,19 +72,25 @@ function UploadQuestion() {
         background="white"
         maxW={{ base: "95%", md: "lg", lg: "2xl" }}
         py={8}
-        mt="5rem"
-        mb="2rem"
+        mt="3rem"
+        mb="1rem"
         rounded="lg"
       >
         <Text
-          textAlign="center"
-          fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
-          fontWeight="bold"
-          color="#06cf60"
-          pb={6}
-        >
-          Add A Question
-        </Text>
+  textAlign="center"
+  fontSize={{ base: "2xl", md: "4xl" }}
+  fontWeight="bold"
+  color="black"
+  mt={3}
+  mb={5}
+  _hover={{
+    color: "#8e44ad", // Change this to the color you want on hover
+    fontSize: { base: "3xl", md: "5xl" }, // Adjust the font size on hover
+    transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
+  }}
+>
+  Upload A Question
+</Text>
         <Divider />
         <Box p={4} display="flex" justifyContent="center">
           <form onSubmit={handleSubmit}>

@@ -13,7 +13,7 @@ const Mainpage = () => {
         alignItems="center"
         textAlign="center"
         flexDirection="column"
-        bgGradient="linear(to-b, teal.200, teal.400)"
+        bgGradient="linear(to-b, teal.200, teal.900)"
         mx={{ base: "0", md: "auto" }}
         p={8}
         borderRadius="md"
@@ -39,7 +39,7 @@ const Mainpage = () => {
           px={4}
           py={2}
           borderRadius="md"
-          _hover={{ textDecoration: "none", bg: "teal.600" }}
+          _hover={{ textDecoration: "none", bg: "blackAlpha.800" }}
         >
           Let's Learn a New Language
         </Link>

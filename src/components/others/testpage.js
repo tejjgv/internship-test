@@ -180,16 +180,22 @@ const TestPage = () => {
         </ModalContent>
       </Modal>
       <Container maxW="xl" py={8} px={4} mt={12}>
-        <Text
-          textAlign="center"
-          fontSize={{ base: "2xl", md: "4xl" }}
-          fontWeight="bold"
-          color="white"
-          mt={3}
-          mb={5}
-        >
-          Fun Quiz
-        </Text>
+      <Text
+  textAlign="center"
+  fontSize={{ base: "2xl", md: "4xl" }}
+  fontWeight="bold"
+  color="black"
+  mt={3}
+  mb={5}
+  _hover={{
+    color: "#8e44ad", // Change this to the color you want on hover
+    fontSize: { base: "3xl", md: "5xl" }, // Adjust the font size on hover
+    transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
+  }}
+>
+  Fun Quiz
+</Text>
+
         <Select
           placeholder="Select Language"
           value={lang_id}
@@ -271,9 +277,18 @@ const TestPage = () => {
             </form>
           </VStack>
         ) : (
-          <Text mt={5} fontSize="xl" color="white" textAlign="center">
-            Select a language and the difficulty level for the quiz
-          </Text>
+          <Text
+          mt={5}
+          fontSize="xl"
+          color="white"
+          textAlign="center"
+          background="blackAlpha.800"
+          borderRadius="10px" // Use borderRadius instead of border-radius
+          border="2px solid #333"
+          padding="10px"
+        >
+          Select a language and the difficulty level for the quiz
+        </Text>
         )}
       </Container>
     </>
