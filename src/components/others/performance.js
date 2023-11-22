@@ -186,9 +186,21 @@ const PerformanceGraph = () => {
         display="flex"
         flexDirection="column"
       >
-        <Text fontSize="3xl" fontWeight="bold" mb={7} mt={12} pt={5}>
-          Performance Graph
-        </Text>
+        <Text
+  textAlign="center"
+  fontSize={{ base: "2xl", md: "4xl" }}
+  fontWeight="bold"
+  color="#8e44ad"
+  mt={3}
+  mb={5}
+  _hover={{
+    color: "black", // Change this to the color you want on hover
+    fontSize: { base: "3xl", md: "5xl" }, // Adjust the font size on hover
+    transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
+  }}
+>
+  Performance Graph
+</Text>
         <Select
           placeholder="Select Language"
           value={lang_id}
