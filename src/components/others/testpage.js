@@ -44,7 +44,7 @@ const TestPage = () => {
         },
       };
       const response = await axios.get(
-        `https://crud-backend-r9ez.onrender.com/quiz/languages`,
+        `https://team-363.onrender.com/quiz/languages`,
         config
       );
       setLanguages(response.data);
@@ -62,7 +62,7 @@ const TestPage = () => {
         },
       };
       const response = await axios.post(
-        "https://crud-backend-r9ez.onrender.com/quiz/questions",
+        "https://team-363.onrender.com/quiz/questions",
         {
           language_id: lang_id,
           category: category,
@@ -138,7 +138,7 @@ const TestPage = () => {
         },
       };
       const response = await axios.post(
-        "https://crud-backend-r9ez.onrender.com/quiz/answers",
+        "https://team-363.onrender.com/quiz/answers",
         dataToSend,
         config
       );

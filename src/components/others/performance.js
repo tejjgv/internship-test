@@ -70,7 +70,7 @@ const PerformanceGraph = () => {
         },
       };
       const response = await axios.get(
-        `https://crud-backend-r9ez.onrender.com/quiz/languages`,
+        `https://team-363.onrender.com/quiz/languages`,
         config
       );
       setLanguages(response.data);
@@ -88,7 +88,7 @@ const PerformanceGraph = () => {
         },
       };
       const response = await axios.get(
-        `https://crud-backend-r9ez.onrender.com/performance?uid=${userInfo._id}&lang_id=${lang_id}`,
+        `https://team-363.onrender.com/performance?uid=${userInfo._id}&lang_id=${lang_id}`,
         config
       );
       setPerformanceData(response.data);

@@ -29,7 +29,7 @@ const LeaderboardPage = () => {
         },
       };
       const response = await axios.get(
-        `https://crud-backend-r9ez.onrender.com/quiz/languages`,
+        `https://team-363.onrender.com/quiz/languages`,
         config
       );
       setLanguages(response.data);
@@ -52,7 +52,7 @@ const LeaderboardPage = () => {
       };
       try {
         const response = await axios.get(
-          `https://crud-backend-r9ez.onrender.com/performance/leaderboard?lang_id=${selectedLangId}`,
+          `https://team-363.onrender.com/performance/leaderboard?lang_id=${selectedLangId}`,
           config
         );
         setLeaderboardData(response.data);

@@ -20,7 +20,7 @@ const ProfilePage = () => {
       };
       try {
         const response = await axios.get(
-          `https://crud-backend-r9ez.onrender.com/performance/proficiency?uid=${userInfo._id}`,
+          `https://team-363.onrender.com/performance/proficiency?uid=${userInfo._id}`,
           config
         );
         setProficiencyArr(response.data);
@@ -51,7 +51,7 @@ const ProfilePage = () => {
     };
     try {
       const isResetDone = await axios.get(
-        `https://crud-backend-r9ez.onrender.com/performance/deletehistory?uid=${userInfo._id}`,
+        `https://team-363.onrender.com/performance/deletehistory?uid=${userInfo._id}`,
         config
       );
       if (isResetDone) {

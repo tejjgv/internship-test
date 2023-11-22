@@ -47,7 +47,7 @@ function UploadQuestion() {
         },
       };
       const isSent = await axios.post(
-        "https://crud-backend-r9ez.onrender.com/quiz/upload",
+        "https://team-363.onrender.com/quiz/upload",
         dataToSend,
         config
       );
