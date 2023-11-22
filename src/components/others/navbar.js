@@ -141,24 +141,7 @@ const Navbar = () => {
   leaderboard
         
       </Link>
-      <Link href="/courses" 
-  fontSize={{ base: "sm", md: "lg" }}
-  bg="#8e44ad"
-  color="white"
-  px={4}
-  py={2}
-  borderRadius="md"
-  _hover={{
-    textDecoration: "none",
-    textColor:"#8e44ad",
-    bg: "white",
-    transform: "scale(1.1)", // Increase the size on hover
-    transition: "transform 0.3s ease", // Add a smooth transition effect
-  }} 
->
-  leaderboard
-        
-      </Link>
+    
       <Link href="/uploadQuestion" 
   fontSize={{ base: "sm", md: "lg" }}
   bg="#8e44ad"
@@ -178,7 +161,7 @@ const Navbar = () => {
   </Link>
   <Spacer />
   <Link
-        href="http://localhost:3000/main"
+        href="https://team-363-frontend.vercel.app/main"
         
         fontSize={{ base: "sm", md: "lg" }}
         bg="white"
