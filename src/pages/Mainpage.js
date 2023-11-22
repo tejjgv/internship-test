@@ -32,7 +32,7 @@ const Mainpage = () => {
         </Text>
         <Link
           href="https://team-363-frantend.vercel.app/courses.html"
-          target="_blank"
+          
           fontSize={{ base: "xl", md: "2xl" }}
           bg="white"
           color="teal.500"
