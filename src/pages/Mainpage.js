@@ -31,7 +31,7 @@ const Mainpage = () => {
           Enhance your language skills through engaging quizzes.
         </Text>
         <Link
-          href="https://tejjgv.github.io/app/"
+          href="https://team-363-frantend.vercel.app/courses.html"
           target="_blank"
           fontSize={{ base: "xl", md: "2xl" }}
           bg="white"
