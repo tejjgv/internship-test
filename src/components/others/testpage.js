@@ -184,11 +184,11 @@ const TestPage = () => {
   textAlign="center"
   fontSize={{ base: "2xl", md: "4xl" }}
   fontWeight="bold"
-  color="black"
+  color="#8e44ad"
   mt={3}
   mb={5}
   _hover={{
-    color: "#8e44ad", // Change this to the color you want on hover
+    color: "black", // Change this to the color you want on hover
     fontSize: { base: "3xl", md: "5xl" }, // Adjust the font size on hover
     transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
   }}
