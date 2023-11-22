@@ -191,7 +191,7 @@ const PerformanceGraph = () => {
   fontSize={{ base: "2xl", md: "4xl" }}
   fontWeight="bold"
   color="#8e44ad"
-  mt={3}
+  mt={9}
   mb={5}
   _hover={{
     color: "black", // Change this to the color you want on hover
