@@ -38,9 +38,21 @@ const Homepage = () => {
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize={{ base: "3xl", md: "4xl" }} fontFamily="Work sans">
-          <Center>Quiz Hub</Center>
-        </Text>
+             <Text
+  textAlign="center"
+  fontSize={{ base: "2xl", md: "4xl" }}
+  fontWeight="bold"
+  color="black"
+  mt={2}
+  mb={3}
+  _hover={{
+    color: "#8e44ad", // Change this to the color you want on hover
+    fontSize: { base: "3xl", md: "5xl" }, // Adjust the font size on hover
+    transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
+  }}
+>
+  Lang. learning App
+</Text>
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs variant="soft-rounded">
