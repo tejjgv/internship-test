@@ -193,7 +193,7 @@ const TestPage = () => {
     transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
   }}
 >
-  Fun Quiz
+  Lang Quiz
 </Text>
 
         <Select
