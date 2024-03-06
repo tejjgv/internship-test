@@ -25,14 +25,13 @@ const Mainpage = () => {
           fontSize={{ base: "4xl", md: "5xl" }}
           mb={4}
         >
-          Sucessfully loged in!
+          Successfully logged in!
         </Heading>
         <Text fontSize={{ base: "xl", md: "2xl" }} mb={8}>
           Enhance your language skills through engaging quizzes.
         </Text>
         <Link
-          href="https://team-363-frantend.vercel.app/courses.html"
-          
+          href="/profile"
           fontSize={{ base: "xl", md: "2xl" }}
           bg="white"
           color="teal.500"
@@ -41,9 +40,8 @@ const Mainpage = () => {
           borderRadius="md"
           _hover={{ textDecoration: "none", bg: "blackAlpha.800" }}
         >
-          Let's Learn a New Language
+          Profile
         </Link>
-       
       </Box>
     </>
   );
