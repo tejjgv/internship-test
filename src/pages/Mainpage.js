@@ -25,7 +25,7 @@ const Mainpage = () => {
           fontSize={{ base: "4xl", md: "5xl" }}
           mb={4}
         >
-          Welcome to the Language Learning Quiz App!
+          Sucessfully loged in!
         </Heading>
         <Text fontSize={{ base: "xl", md: "2xl" }} mb={8}>
           Enhance your language skills through engaging quizzes.
