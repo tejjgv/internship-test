@@ -2,18 +2,17 @@ import React, { useState } from "react";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
 import { VStack } from "@chakra-ui/layout";
-import { Button, useToast, Select } from "@chakra-ui/react";
+import { Button, useToast } from "@chakra-ui/react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [show, setShow] = useState(false);
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [confirmpassword, setConfirmpassword] = useState();
-  const [password, setPassword] = useState();
-  const [isTeacher, setIsTeacher] = useState(false);
-  const [loading, setLoading] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirmpassword] = useState("");
+  const [loading, setLoading] = useState(false);
   const toast = useToast();
   const navigate = useNavigate();
 
@@ -54,7 +53,7 @@ const Signup = () => {
 
       const { data } = await axios.post(
         "https://team-363.onrender.com/user",
-        { name, email, isTeacher, password },
+        { name, email, password },
         config
       );
 
@@ -105,23 +104,6 @@ const Signup = () => {
           }}
           autoComplete="off"
         />
-      </FormControl>
-      <FormControl isRequired>
-        <FormLabel>
-          Are you a teacher ? (Only teachers can upload questions)
-        </FormLabel>
-        <Select
-          background="white"
-          mt={2}
-          placeholder="Are You A Teacher"
-          textAlign="center"
-          onChange={(e) => {
-            setIsTeacher(e.target.value.toString() === "true");
-          }}
-        >
-          <option value="true">Yes</option>
-          <option value="false">No</option>
-        </Select>
       </FormControl>
       <FormControl id="password" isRequired>
         <FormLabel>Password</FormLabel>
