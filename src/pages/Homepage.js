@@ -51,7 +51,7 @@ const Homepage = () => {
     transition: "color 0.3s ease, font-size 0.3s ease", // Adjust the transition duration and easing as needed
   }}
 >
-  Lang. learning App
+  Advisoropedia Login page
 </Text>
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
