@@ -28,7 +28,7 @@ const Mainpage = () => {
           Successfully logged in!
         </Heading>
         <Text fontSize={{ base: "xl", md: "2xl" }} mb={8}>
-          Enhance your language skills through engaging quizzes.
+          
         </Text>
         <Link
           href="/profile"
